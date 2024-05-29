@@ -1,0 +1,93 @@
+/* other styleing */
+.appContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.app {
+  margin-top: 6rem;
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.split {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.noNotes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.noNotes p {
+  font-size: 3rem;
+}
+
+.noNotes button {
+  background-color: #D6A4A4;
+  padding: 1rem;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+.noNotes button:hover {
+  background-color: white;
+  color: #D6A4A4;
+  box-shadow: 1px 1px 10px rgba(214, 164, 164, 0.8);
+}
+
+.split .gutter {
+  background-color: #D6A4A4;
+  cursor: col-resize;
+}
+
+.split.darkMood .gutter {
+  background-color: #d68d20 !important;
+}
+
+/*  dark mood style */
+.appContainer.darkMood {
+  background: linear-gradient(to right, #000000, #424242); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.app.darkMood {
+  background-color: black;
+  box-shadow: 1px 1px 10px rgba(216, 134, 11, 0.4);
+}
+
+.noNotes.darkMood p {
+  color: #d68d20;
+}
+
+.noNotes.darkMood button {
+  background-color: #d68d20;
+}
+.noNotes.darkMood button:hover {
+  background-color: #000;
+  color: #d68d20;
+  box-shadow: 1px 1px 8px rgba(214, 141, 32, 0.8);
+}
+
+.userSalut {
+  position: absolute;
+  top: 5rem;
+  left: 10%;
+  color: #fff;
+}/*# sourceMappingURL=notes.css.map */
